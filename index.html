@@ -222,6 +222,8 @@
 
 <!-- Home -->
 
+<!-- Home -->
+
 <section id="home" class="background-dark-blue-3 full-height height-auto-lg hide-over"
     style="background-image: url('novo/img/background-thiago-finch.png'); max-height: 900px;">
 
@@ -233,13 +235,6 @@
         #home {
             background-size: 190%;
             background-position-y: 70px;
-        }
-
-        /* Mantém apenas o frasco do conteúdo principal */
-        #home .show-mobile {
-            max-width: 70%;
-            margin: 0 auto;
-            display: block;
         }
 
         /* --- SUBIR AS FRASES (ADICIONE AQUI) --- */
@@ -255,6 +250,12 @@
     
     /* Remove o botão completamente em todos os dispositivos */
     #home .product-btn {
+        display: none !important;
+    }
+    
+    /* Remove a imagem do frasco completamente */
+    #home .frasco,
+    #home .show-mobile {
         display: none !important;
     }
 </style>
@@ -292,13 +293,7 @@
                     </li>
                 </ul>
 
-                <div style="width:100%">
-                    <img src="novo/img/frasco.png" class="img-fluid frasco show-mobile"
-                        data-entrance="from-bottom" data-entrance-delay="100">
-                </div>
-
-                <!-- O botão foi removido completamente -->
-                <!-- <br><br> foi mantido apenas se necessário para espaçamento -->
+                <!-- A imagem do frasco foi removida completamente -->
 
             </div>
 
