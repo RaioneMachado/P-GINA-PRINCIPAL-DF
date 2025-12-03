@@ -218,6 +218,8 @@
 
 <!-- Home -->
 
+<!-- Home -->
+
 <section id="home" class="background-dark-blue-3 full-height height-auto-lg hide-over"
     style="background-image: url('novo/img/background-thiago-finch.png'); max-height: 900px;">
 
@@ -231,11 +233,6 @@
             background-position-y: 70px;
         }
 
-        /* Remove imagens flutuantes no mobile */
-        #home .show-desktop {
-            display: none !important;
-        }
-
         /* Mantém apenas o frasco do conteúdo principal */
         #home .show-mobile {
             max-width: 70%;
@@ -245,8 +242,13 @@
 
         /* --- SUBIR AS FRASES (ADICIONE AQUI) --- */
         #home ul {
-    margin-top: 360px !important;
-}
+            margin-top: 360px !important;
+        }
+    }
+
+    /* Remove completamente as imagens flutuantes em todos os dispositivos */
+    #home .list-amostra {
+        display: none !important;
     }
 </style>
 
@@ -300,18 +302,9 @@
 
             <div class="col-md-4"></div>
 
+            <!-- Coluna vazia - as imagens foram removidas -->
             <div class="col-md-4" data-entrance="from-left" data-entrance-delay="100">
-
-                <!-- Essas somem no mobile -->
-                <div class="list-amostra">
-                    <img src="novo/img/pill.png" class="img-fluid pill p3 show-desktop"
-                        data-entrance="from-bottom" data-entrance-delay="100">
-                    <img src="novo/img/frasco.png" class="img-fluid frasco show-desktop"
-                        data-entrance="from-bottom" data-entrance-delay="100">
-                    <img src="novo/img/pill.png" class="img-fluid pill p4 show-desktop"
-                        data-entrance="from-bottom" data-entrance-delay="100">
-                </div>
-
+                <!-- As imagens flutuantes foram removidas completamente -->
             </div>
 
         </div>
@@ -324,7 +317,6 @@
     </div>
 
 </section>
-
 
     <!-- / Home --><!-- Depoimentos -->
 
